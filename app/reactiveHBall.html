@@ -1,0 +1,22 @@
+<head>
+  <title>Reactive H-Ball</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div id="intro">
+    <img src="title.png" alt="The Reactive H-Ball" width="100%" />
+    <p>Think of a question that can be answered with either 'yes' or 'no' and shake your device.
+      <br />The reactive H-Ball will tell you the truth.</p>
+  </div>
+  <div id="hball-container">
+    {{> hball}}
+  </div>
+</body>
+
+<template name="hball">
+  <!-- remove the button <button id="shaker">Shake</button> -->
+  <div id="ball">
+    <div id="text">{{answer}}</div>
+  </div>
+</template>
